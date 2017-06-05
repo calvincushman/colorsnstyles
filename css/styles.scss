@@ -1,3 +1,8 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+
 $tomato: #ff623f;
 $gold: #ffbc17;
 $teal: #2accc3;
@@ -15,8 +20,20 @@ $colors: (
 	.color-#{$color}
 	{
 		background-color: $hex;
+		.third:first-child {
+			background-color: lighten($hex,5%);
+		}
+
+	};
+	.color-#{$color}
+	{
+		.third:nth-child(3) {
+			background-color: darken($hex,5%);
+		}
 	}
 }
+
+
 
 $box-width: 130px;
 $box-height: 100px;
@@ -26,4 +43,16 @@ $box-height: 100px;
 	float: left;
 	height: $box-height;
 	width: $box-width;
+}
+
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+
+.third {
+	width: 33.33%;
+	height: 100%;
+	float:left;
 }
