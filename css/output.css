@@ -1,0 +1,19 @@
+.color-tomato {
+  background-color: #ff623f; }
+
+.color-gold {
+  background-color: #ffbc17; }
+
+.color-teal {
+  background-color: #2accc3; }
+
+.color-mint {
+  background-color: #d8f5e8; }
+
+.box {
+  margin: 15px;
+  float: left;
+  height: 100px;
+  width: 130px; }
+
+/*# sourceMappingURL=output.css.map */

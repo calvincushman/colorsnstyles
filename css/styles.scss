@@ -1,0 +1,29 @@
+$tomato: #ff623f;
+$gold: #ffbc17;
+$teal: #2accc3;
+$mint: #d8f5e8;
+
+$colors: (
+	'tomato' : $tomato,
+	'gold' : $gold,
+	'teal' : $teal,
+	'mint' : $mint
+);
+
+@each $color, $hex in $colors
+{
+	.color-#{$color}
+	{
+		background-color: $hex;
+	}
+}
+
+$box-width: 130px;
+$box-height: 100px;
+
+.box {
+	margin: 15px;
+	float: left;
+	height: $box-height;
+	width: $box-width;
+}
