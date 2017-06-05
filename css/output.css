@@ -88,15 +88,15 @@
 .box {
   margin: 15px;
   float: left;
-  height: 100px;
-  width: 130px; }
+  height: 110px;
+  width: 200px; }
 
 .littlebox {
   /* dimensions and float for all little mix boxes */
   margin: 0px 15px 15px 15px;
   float: left;
   height: 33px;
-  width: 130px; }
+  width: 200px; }
 
 .row:after {
   content: "";

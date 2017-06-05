@@ -48,8 +48,8 @@ $colors: (
 };
 
 
-$box-width: 130px;
-$box-height: 100px;
+$box-width: 200px;
+$box-height: 110px;
 
 .box {
 	margin: 15px;
@@ -58,11 +58,12 @@ $box-height: 100px;
 	width: $box-width;
 }
 
+
 .littlebox { /* dimensions and float for all little mix boxes */
 	margin: 0px 15px 15px 15px;
 	float: left;
 	height: 33px;
-	width: 130px;
+	width: 200px;
 
 }
 
