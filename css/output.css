@@ -1,42 +1,101 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
+/* loop through colors array. remember $color and $hex are just parameter names. the loop will pass through 'tomato' and $tomato as those arguments in the first iteration, and so on.  */
 .color-tomato {
+  /* make a new class with name color-tomato, for example  */
   background-color: #ff623f; }
   .color-tomato .third:first-child {
     background-color: #ff7759; }
+  .color-tomato .third:nth-child(3) {
+    background-color: #ff4d26; }
 
-.color-tomato .third:nth-child(3) {
-  background-color: #ff4d26; }
+.mix-mint-tomato {
+  background-color: #e6c2ad; }
 
+.mix-teal-tomato {
+  background-color: #75a795; }
+
+.mix-gold-tomato {
+  background-color: #ff9e3a; }
+
+.mix-tomato-tomato {
+  background-color: #ff623f; }
+
+/* loop through colors array. remember $color and $hex are just parameter names. the loop will pass through 'tomato' and $tomato as those arguments in the first iteration, and so on.  */
 .color-gold {
-  background-color: #ffbc17; }
+  /* make a new class with name color-tomato, for example  */
+  background-color: #ffbe37; }
   .color-gold .third:first-child {
-    background-color: #ffc331; }
+    background-color: #ffc651; }
+  .color-gold .third:nth-child(3) {
+    background-color: #ffb61e; }
 
-.color-gold .third:nth-child(3) {
-  background-color: #fdb400; }
+.mix-mint-gold {
+  background-color: #e6e2aa; }
 
+.mix-teal-gold {
+  background-color: #75c792; }
+
+.mix-gold-gold {
+  background-color: #ffbe37; }
+
+.mix-tomato-gold {
+  background-color: #ff823c; }
+
+/* loop through colors array. remember $color and $hex are just parameter names. the loop will pass through 'tomato' and $tomato as those arguments in the first iteration, and so on.  */
 .color-teal {
+  /* make a new class with name color-tomato, for example  */
   background-color: #2accc3; }
   .color-teal .third:first-child {
     background-color: #39d6ce; }
+  .color-teal .third:nth-child(3) {
+    background-color: #26b7af; }
 
-.color-teal .third:nth-child(3) {
-  background-color: #26b7af; }
+.mix-mint-teal {
+  background-color: #9be7db; }
 
+.mix-teal-teal {
+  background-color: #2accc3; }
+
+.mix-gold-teal {
+  background-color: #b4c368; }
+
+.mix-tomato-teal {
+  background-color: #b4876d; }
+
+/* loop through colors array. remember $color and $hex are just parameter names. the loop will pass through 'tomato' and $tomato as those arguments in the first iteration, and so on.  */
 .color-mint {
+  /* make a new class with name color-tomato, for example  */
   background-color: #d8f5e8; }
   .color-mint .third:first-child {
     background-color: #ecfaf4; }
+  .color-mint .third:nth-child(3) {
+    background-color: #c4f0dc; }
 
-.color-mint .third:nth-child(3) {
-  background-color: #c4f0dc; }
+.mix-mint-mint {
+  background-color: #d8f5e8; }
+
+.mix-teal-mint {
+  background-color: #67dad0; }
+
+.mix-gold-mint {
+  background-color: #f1d175; }
+
+.mix-tomato-mint {
+  background-color: #f1957a; }
 
 .box {
   margin: 15px;
   float: left;
   height: 100px;
+  width: 130px; }
+
+.littlebox {
+  /* dimensions and float for all little mix boxes */
+  margin: 0px 15px 15px 15px;
+  float: left;
+  height: 33px;
   width: 130px; }
 
 .row:after {

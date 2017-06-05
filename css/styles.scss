@@ -4,7 +4,7 @@
 
 
 $tomato: #ff623f;
-$gold: #ffbc17;
+$gold: #ffbe37;
 $teal: #2accc3;
 $mint: #d8f5e8;
 
@@ -15,21 +15,37 @@ $colors: (
 	'mint' : $mint
 );
 
-@each $color, $hex in $colors /* loop through colors array. remember $color and $hex are just parameter names. the loop will pass through 'tomato' and $tomato as those arguments in the first iteration, and so on.  */
-{
-	.color-#{$color} /* make a new class with name color-tomato, for example  */
-	background-color: $hex;
+@each $color, $hex in $colors {/* loop through colors array. remember $color and $hex are just parameter names. the loop will pass through 'tomato' and $tomato as those arguments in the first iteration, and so on.  */
 
-	.third:first-child {
-		background-color: lighten($hex,5%);
+	.color-#{$color} {/* make a new class with name color-tomato, for example  */
+		background-color: $hex;
+
+		.third:first-child {
+			background-color: lighten($hex,5%);
+		}
+
+		.third:nth-child(3) {
+			background-color: darken($hex,5%);
+		}
 	}
 
-	.third:nth-child(3) {
-		background-color: darken($hex,5%);
+	.mix-mint-#{$color} {
+		background-color: mix($hex, $mint, 35%);
+	}
+
+	.mix-teal-#{$color}{
+		background-color: mix($hex, $teal, 35%);
+	}
+
+	.mix-gold-#{$color}{
+		background-color: mix($hex, $gold, 35%);
+	}
+
+	.mix-tomato-#{$color}{
+		background-color: mix($hex, $tomato, 35%);
 	}
 
 };
-
 
 
 $box-width: 130px;
@@ -41,6 +57,28 @@ $box-height: 100px;
 	height: $box-height;
 	width: $box-width;
 }
+
+.littlebox { /* dimensions and float for all little mix boxes */
+	margin: 0px 15px 15px 15px;
+	float: left;
+	height: 33px;
+	width: 130px;
+
+}
+
+
+// .mix-mint {/* color mix for certain row */
+// 	background-color: mix($tomato, $mint, 65%);
+// }
+
+
+// @each $color, $hex in $colors { /* this will make a series of classes named .mix-tomato, .mix-gold, etc. that */
+// 	.mix-mint-#{$color}{
+// 		background-color: mix($hex, $mint, 35%);
+// 	}
+//
+// }
+
 
 .row:after {
       content: "";
