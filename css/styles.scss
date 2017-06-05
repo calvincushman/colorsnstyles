@@ -15,23 +15,20 @@ $colors: (
 	'mint' : $mint
 );
 
-@each $color, $hex in $colors
+@each $color, $hex in $colors /* loop through colors array. remember $color and $hex are just parameter names. the loop will pass through 'tomato' and $tomato as those arguments in the first iteration, and so on.  */
 {
-	.color-#{$color}
-	{
-		background-color: $hex;
-		.third:first-child {
-			background-color: lighten($hex,5%);
-		}
+	.color-#{$color} /* make a new class with name color-tomato, for example  */
+	background-color: $hex;
 
-	};
-	.color-#{$color}
-	{
-		.third:nth-child(3) {
-			background-color: darken($hex,5%);
-		}
+	.third:first-child {
+		background-color: lighten($hex,5%);
 	}
-}
+
+	.third:nth-child(3) {
+		background-color: darken($hex,5%);
+	}
+
+};
 
 
 
